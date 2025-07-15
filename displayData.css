@@ -18,27 +18,35 @@ body {
 }
 
 /* Navigation Button */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.button-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button-link:active {
+  transform: scale(0.98);
+}
+
 .nav-btn {
-    margin-bottom: 30px;
-    background-color: #007BFF;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.nav-btn a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.nav-btn:hover {
-    background-color: #0056b3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 /* Container Styling */

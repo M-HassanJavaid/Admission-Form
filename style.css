@@ -14,30 +14,29 @@ body {
   padding: 20px;
 }
 
-button a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* Navigation Button */
-button {
-  background-color: #007bff;
-  border: none;
+.button-link {
+  display: inline-block;
   padding: 10px 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-button:hover {
-  background-color: #0056b3;
+.button-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button-link:active {
+  transform: scale(0.98);
 }
 
 .nav-btn {
